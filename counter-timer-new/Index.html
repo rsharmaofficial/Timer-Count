@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="timer-heading">Remaining Time</h1>
+      <div class="countertimer">
+        <div class="time-unit">
+          <input
+            type="number"
+            id="day-input"
+            placeholder="Day"
+            min="1"
+            max="31"
+          />
+          <label for="day-input">Day</label>
+        </div>
+        <div class="time-unit">
+          <input
+            type="number"
+            id="month-input"
+            placeholder="Month"
+            min="1"
+            max="12"
+          />
+          <label for="month-input">Month</label>
+        </div>
+        <button id="start-timer">Start Timer</button>
+        <div class="time-display">
+          <p><span class="days">00</span> Days</p>
+          <p><span class="hours">00</span> Hours</p>
+          <p><span class="minutes">00</span> Minutes</p>
+          <p><span class="seconds">00</span> Seconds</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

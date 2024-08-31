@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#timer-heading {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.countertimer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-unit {
+    margin: 10px;
+}
+
+input {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.time-display {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.time-display p {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.time-display span {
+    display: block;
+    font-size: 4rem;
+}
+
+#timer-heading.time-up {
+    color: red;
+    font-size: 2em;
+    animation: blink 1s step-start 0s infinite;
+}
+
+@keyframes blink {
+    50% {
+        visibility: hidden;
+    }
+}
